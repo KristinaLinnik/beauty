@@ -1,0 +1,397 @@
+
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "slick-carousel/slick/slick.scss";
+// endbower
+
+body {
+  font-size: 100%;
+  line-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #eee;
+  position: relative;
+  min-height: 100%;
+  background: url("../images/wecare_body_bg.png") no-repeat 50% 0;
+  background-size: 100% 700px;
+}
+h2{
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.padding-none {
+  padding: 0;
+}
+
+/*********************NAVIGATION***********/
+.navbar-default {
+  padding: 4% 0;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default,
+.navbar-default .navbar-nav > li > a,
+.about-main-list {
+  background-color: transparent;
+  border-color: transparent;
+  color: #eee;
+}
+
+.navbar-default .navbar-nav > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font: normal 1.4em/1.4em 'Roboto', sans-serif;
+  text-shadow: 1px 1px 2px rgba(86, 64, 67, 0.5);
+  -webkit-transition: color .4s ease;
+  -moz-transition: color .4s ease;
+  -o-transition: color .4s ease;
+  transition: color .4s ease;
+  transition-property: color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: initial;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  cursor: pointer;
+  color: #ffe583;
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a {
+  color: #ffe583;
+  background-color: transparent;
+}
+
+/* color: #555; */
+/* background-color: #e7e7e7; */
+
+/*********************NAVIGATION         END***********/
+
+.about-main-list {
+  padding-left: 0;
+}
+
+.about-main-list li {
+  list-style: none;
+  font-size: 1.6em;
+  margin-bottom: 6%;
+  line-height: 1.4;
+}
+
+.about-main-list li .img-wrap {
+  float: left;
+  border-radius: 14px;
+  width: 96px;
+  height: 96px;
+  margin-right: 30px;
+  opacity: 0.8;
+
+}
+
+.about-main-list .about-main_item1 .img-wrap {
+  background: url("../images/beautySkin.jpg") no-repeat;
+  background-size: cover;
+}
+
+.about-main-list .about-main_item2 .img-wrap {
+  background: url("../images/cosmetolog.jpg") no-repeat;
+  background-size: cover;
+}
+
+.about-main-list .about-main_item3 .img-wrap {
+  background: url("../images/face_beauty.jpg") no-repeat;
+  background-size: cover;
+}
+
+.about-main-list li b {
+  line-height: 1.4em;
+}
+
+/*******************TOP-SLIDER**********/
+
+.courel-wrap img {
+  float: right;
+  border-radius: 4px;
+  height: 440px;
+  width: 94%;
+
+}
+
+/*******************TOP-SLIDER-END**********/
+
+/**********************about-us-section******************/
+
+//.about-us{
+//  h2{
+//    margin-bottom: 34px;
+//  }
+//}
+/**********************about-us-carousel******************/
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-caption h3 {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  color: #666;
+  /*padding-top: 90px;*/
+  /*font-size: 52px;*/
+  /*font-family: "trebuchet ms", sans-serif;*/
+}
+
+.item {
+  text-align: center;
+  height: 300px !important;
+  width: 100%;
+}
+
+.about-us-carousel {
+  margin: 20px 0;
+}
+
+.about-us-carousel .slide-1 {
+  background: url('../images/fresh_face.jpg') no-repeat;
+  background-size: cover;
+}
+
+.about-us-carousel .slide-2 {
+  background: url('../images/BoxImgA.jpg') no-repeat;
+  background-size: cover;
+}
+
+.about-us-carousel .slide-3 {
+  background: url('../images/home_57.jpg') no-repeat;
+  background-size: cover;
+}
+
+/**********************about-us-carousel   END******************/
+
+
+/****************************FLIP FOR SLIDER***********************************/
+.myflip, #about-us-carousel .slide.flip {
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation: flip;
+  -webkit-animation-duration: 1s;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation: flip;
+  -moz-animation-duration: 1s;
+  -o-transform-origin: 50% 50%;
+  -o-animation: flip;
+  -o-animation-duration: 1s;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation: flip;
+  -ms-animation-duration: 1s;
+  transform-origin: 50% 50%;
+  animation: flip;
+  animation-duration: 1s;
+  transform: rotateY(360deg);
+  transition: 2s;
+
+}
+
+.main-text-wrap h2:before {
+  content: url("../images/wecare_q_bg.png");
+  position: absolute;
+  top: 0;
+  right: 50%;
+
+}
+
+.main-text-wrap {
+  font-size: 1.8em;
+  padding: 46px 0 28px 0;
+  color: #7b949f;
+  position: relative;
+  display: block;
+  clear: both;
+  font-weight: 300;
+  line-height: 2em;
+  margin-bottom: 40px;
+  /*position: relative;*/
+
+}
+
+//.main-text-wrap h2 {
+//  font-size: 2em;
+//}
+
+/***************************nav nav-tabs*********************************************/
+
+.nav-tabs > li > a {
+  color: #7b949f;
+  font-size: 1.4em;
+  padding: 6px;
+  font-weight: 300;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  -webkit-transition: color .4s ease;
+  -moz-transition: color .4s ease;
+  -o-transition: color .4s ease;
+  transition: color .4s ease;
+  transition-property: color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: initial;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:visited,
+.nav-tabs > li.active > a:active {
+  color: #d6adbc;
+  background-color: #fff;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: transparent;
+  color: #d6adbc;
+  border-bottom: none;
+
+}
+
+.tab-content {
+  padding: 4% 2%;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  color: #7b949f;
+}
+
+/***************************nav nav-tabs END*********************************************/
+/***********************************ABOUT-MY-WORK SECTION*********************************/
+//.about-my-work{
+//  h2{
+//    margin-bottom: 34px;
+//  }
+//}
+/***********************************END*****ABOUT-MY-WORK SECTION*********************************/
+
+/********************************* COMMENTS-ABOUT-ME SECTION*****************************************************/
+.comments-about-me {
+  //h2{
+  //  margin-bottom: 34px;
+  //}
+  .list-of-comments {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #7b949f;
+    font-size: 1em;
+  }
+
+  .list-of-comments li {
+    list-style: none;
+    display: inline-block;
+    width: 33%;
+  }
+
+  .list-of-comments > li > p {
+    font-size: 1.2em;
+    line-height: 1em;
+
+  }
+
+  .list-of-comments {
+    li img {
+      width: 30%;
+      border-radius: 50%;
+      float: left;
+      margin-right: 10px;
+
+    }
+  }
+}
+
+/********************************* END  COMMENTS ABOUT *****************************************************/
+
+
+
+/****************************************** FEED BACK FORM ***************************************************/
+.feed-back-form {
+  background: url('../images/wecare_contactus_bg.jpg') no-repeat;
+  background-size: cover;
+  padding: 4% 0;
+  //h2{
+  //  margin-bottom: 34px;
+  //}
+  p{
+    font-size: 1.4em;
+    line-height: 1em;
+  }
+}
+/***************************************** END  FEED BACK FORM ***************************************************/
+/****media******/
+@media(max-width: 480px) {
+  body {
+    background-size: cover;
+  }
+  .courel-wrap img {
+    margin: 0 auto !important;
+  }
+
+}
+
+@media (max-width: 767px) {
+  body {
+    /*background-size: cover;*/
+  }
+  .courel-wrap img {
+    margin: 0 auto !important;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  body {
+    /*background-size: cover;*/
+  }
+
+}
+
+@media (min-width: 979px) {
+  .courel-wrap img {
+    float: right;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1084px;
+  }
+}
+
+
+
+///* Responsive: Portrait tablets and up */
+//@media screen and (min-width: 768px) {
+//  .container {
+//    max-width: 730px;
+//  }
+//
+//  /* Remove the padding we set earlier */
+//  .header,
+//  .marketing,
+//  .footer {
+//    padding-left: 0;
+//    padding-right: 0;
+//  }
+//  /* Space out the masthead */
+//  .header {
+//    margin-bottom: 30px;
+//  }
+//  /* Remove the bottom border on the jumbotron for visual effect */
+//  .jumbotron {
+//    border-bottom: 0;
+//  }
+//}
