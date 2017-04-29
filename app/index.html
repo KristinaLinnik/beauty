@@ -8,7 +8,8 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -83,7 +84,7 @@
     </div>
     <div class="col-sm-12 text-center">
       <div class="main-text-wrap">
-        <h2>Lorem Ipsum is simply dummy</h2>
+        <h1>Lorem Ipsum is simply dummy</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry text of the
           printing and typesetting industry. orem Ipsum is simply dummy text of the printing and typesetting
           industry text of the
@@ -319,9 +320,9 @@
         <h2>Вы можете связаться с нами по ниже указанным
           телефонам или отправить форму и мы перезвоним.
         </h2>
-        <p>Приглашем вас на бесплатную консультацию и вкусный чаек для диагностики вашего
-          состояния кожи и личного знакомства
-        </p>
+        <!--<p>Приглашем вас на бесплатную консультацию и вкусный чаек для диагностики вашего-->
+        <!--состояния кожи и личного знакомства-->
+        <!--</p>-->
         <div class="col-sm-4">
           <ul class="adress-list">
             <li>Украина, г.Одесса</li>
@@ -331,26 +332,24 @@
         </div>
         <div class="col-sm-4">
           <form>
-            <label for="name">Ваше имя</label>
-            <input type="text" id="name">
-            <label for="tel">Номер телефона</label>
-            <input type="text" id="tel">
+            <!--<label for="feed-back"></label>-->
+            <textarea id="feed-back" name="feed-back"
+                      style="width: 100%; height: 140px;"
+                      placeholder="Здесь вы можете оставить свой комментарий или задать вопрос."></textarea>
           </form>
         </div>
         <div class="col-sm-4">
           <form>
-            <label for="feed-back">Здесь вы можете оставить свой комментарий или задать вопрос.</label>
-            <textarea id="feed-back" style="width: 100%; height: 200px;">
-
-                    </textarea>
+            <!--<label for="name"></label>-->
+            <input type="text" id="name" placeholder="Ваше имя">
+            <label for="tel"></label>
+            <input type="text" id="tel" placeholder="Номер телефона">
           </form>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
 
 
 <!-- build:js(.) scripts/vendor.js -->
@@ -408,8 +407,6 @@
 
   });
 </script>
-
-
 
 
 </body>
