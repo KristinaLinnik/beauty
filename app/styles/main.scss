@@ -15,7 +15,7 @@ body {
   position: relative;
   min-height: 100%;
   background: url("../images/wecare_body_bg.png") no-repeat 50% 0;
-  background-size: 100% 700px;
+  background-size: 160% 648px;
 }
 
 h1 {
@@ -33,7 +33,10 @@ h2{
 
 /*********************NAVIGATION***********/
 .navbar-default {
-  padding: 4% 0;
+  //padding: 4% 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
 }
 
 .navbar-default .navbar-brand,
@@ -72,6 +75,27 @@ h2{
   color: #ffe583;
   background-color: transparent;
 }
+
+.navbar-header{
+  width: 50%;
+  img{
+    height: auto;
+    width: 98px;
+    float: left;
+  }
+  .navbar-brand{
+    float: left;
+    width: 60%;
+    color: #ffe583;
+    font-family: 'Lobster', cursive;
+    font-size: 1.4em;
+    line-height: 1;
+    letter-spacing: 1.4px;
+  }
+
+
+  }
+
 
 /* color: #555; */
 /* background-color: #e7e7e7; */
@@ -123,8 +147,8 @@ h2{
 .courel-wrap img {
   float: right;
   border-radius: 4px;
-  height: 440px;
-  width: 94%;
+  //max-height: 422px;
+  //width: 72%;
 
 }
 
@@ -163,7 +187,7 @@ h2{
 }
 
 .about-us-carousel .slide-1 {
-  background: url('../images/fresh_face.jpg') no-repeat;
+  background: url('../images/cosmetics.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -205,7 +229,7 @@ h2{
 .main-text-wrap h1:before {
   content: url("../images/wecare_q_bg.png");
   position: absolute;
-  top: 0;
+  top: 26px;
   right: 50%;
 
 }
@@ -338,9 +362,7 @@ h2{
     list-style: none;
     padding-left: 0;
   }
-  li{
-    text-align: left;
-  }
+
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #fff;
     font-weight: normal;
@@ -375,11 +397,14 @@ h2{
     font-size: 1em;
     border-radius: 4px;
     text-align: left;
-    margin-bottom: 10px;
+    //margin-bottom: 10px;
     background-color: #747f85;
     border: none;
     padding: 4px 8px;
     color: #fff;
+  }
+  #tel{
+    margin-bottom: 20px;
   }
   form input[type="text"]:focus,
   textarea:focus{
@@ -391,50 +416,55 @@ h2{
   textarea {
     resize: none;
   }
+  .submit-btn {
+    width: 60%;
+    color: #fff;
+    background-color: #747f85;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 0;
+  }
 
 }
 /***************************************** END  FEED BACK FORM ***************************************************/
 /****media******/
 @media(max-width: 480px) {
   body {
-    background-size: cover;
+    background-size: 272% 824px;
   }
+
   .courel-wrap img {
     margin: 0 auto !important;
   }
-  .feed-back-form{
     input[type="text"]{
       width: 100%;
     }
-  }
+  //textarea{
+  //  margin-bottom: 16px;
+  //}
 
 }
 
 @media (max-width: 767px) {
-  body {
-    /*background-size: cover;*/
-  }
   .courel-wrap img {
     margin: 0 auto !important;
   }
-  .feed-back-form{
-    input[type="text"]{
-      width: 48%;
-      float: left;
-    }
+  .navbar-header {
+    width: 100%;
   }
   .feed-back-form{
     input[type="text"]:first-child{
       margin-right: 4%;
+    }
+    textarea{
+      margin-bottom: 16px;
     }
   }
 
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  body {
-    /*background-size: cover;*/
-  }
+
 
 }
 
