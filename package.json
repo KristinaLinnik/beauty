@@ -40,5 +40,8 @@
   },
   "scripts": {
     "test": "karma start test\\karma.conf.js"
+  },
+  "dependencies": {
+    "bxslider": "^4.2.11"
   }
 }

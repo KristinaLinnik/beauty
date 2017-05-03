@@ -16,9 +16,11 @@
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis|Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="bxslider/jquery.bxslider.css" rel="stylesheet">
+
   <!-- endbuild -->
 </head>
-<body ng-app="beautyApp">
+<body ng-app="beautyApp" id="up-scroll">
 <div class="container">
   <div class="row">
     <!-- Меню navbar -->
@@ -28,7 +30,7 @@
         <!-- Бренд или логотип фирмы (обычно содержит ссылку на главную страницу) -->
         <img class="img-responsive" src="images/icon_hair-e1404156489141.png">
         <a href="#" class="navbar-brand">
-          Профессиональный уход и забота о вашей коже</a>
+          Профессиональная забота о вашей коже</a>
         <!-- Кнопка с полосочками, которая открывает меню на мобильных устройствах -->
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu"
                 aria-expanded="false">
@@ -292,29 +294,56 @@
       </div>
     </div>
   </section>
+
+
   <section class="comments-about-me">
     <h2 class="text-center">Отзывы о работе</h2>
-    <ul class="list-of-comments">
-      <li>
-        <img src="images/avatar.jpg" alt="avatar" class="img-responsive">
-        <h4>Lady Gaga</h4>
-        <p>Lovely and perfect doctor ever! ever ovely and perfect doctor ever ovely and perfect doctor
-          ever ovely and perfect doctor ever!</p>
-      </li>
-      <li>
-        <img src="images/avatar.jpg" alt="avatar" class="img-responsive">
-        <h4>Lady Gaga</h4>
-        <p>Lovely and perfect doctor ever!ever ovely and perfect doctor ever ovely and perfect doctor
-          ever ovely and perfect doctor ever!</p>
-      </li>
-      <li>
-        <img src="images/avatar.jpg" alt="avatar" class="img-responsive">
-        <h4>Lady Gaga</h4>
-        <p>Lovely and perfect doctor ever ovely and perfect doctor ever ovely and perfect doctor
-          ever ovely and perfect doctor ever!</p>
-      </li>
-    </ul>
-
+    <!--<div id="slider-comments" class="">-->
+      <div class="list-of-comments">
+        <!--<div class="carousel-inner-bx">-->
+        <div class="slide">
+          <img src="images/otziv1.jpg" alt="avatar" class="img-responsive">
+          <h4>Анна Баранник</h4>
+          <p>Рекомендую!)))С переездом Ирины в Одессу потеряла грамотного косметолога.
+            Остаётся завидовать одеситам!</p>
+        </div>
+        <div class="slide">
+          <img src="images/otziv2jpg.jpg" alt="avatar" class="img-responsive">
+          <h4>Светлана Маева</h4>
+          <p>Поддерживаю, золотые ручки и думающий специалист!</p>
+        </div>
+        <div class="slide">
+          <img src="images/avatar.jpg" alt="avatar" class="img-responsive">
+          <h4>Кристина Линник</h4>
+          <p>Ирина - это настоящий профессионал и мастер своего дела!У меня была проблемная очень сухая кожа,
+            а теперь я точно могу сказать об этом в прошедшем времени! и Ирина помогла мне на 500 % справиться
+            с этим недугом. Ирина всегда подбирает лечение с индивидуальным подходом к каждому.
+            Её рекомендации касаются как внешнего воздействия на проблему, так и (что очень-очень важно!)
+            решения проблемы изнутри. Все процедуры проводятся с помощью профессиональной косметики и умелых добрых
+            рук:)
+            Хочу всем посоветовать Ирину- точно не прогадаете. Если есть какие-то вопросы приходите к ней за советом
+            Я при случае рекомендую её своим друзьям/знакомым.
+            А ещё - Ирина очень добрый, отзывчивый и честный человек и Косметолог с большой буквы!
+            Ирочка, спасибо тебе огромное за помощь, советы и отличное настроение!</p>
+        </div>
+        <div class="slide">
+          <img src="images/otziv4.jpg" alt="avatar" class="img-responsive">
+          <h4>Яна Щербак</h4>
+          <p>Посещала Ирину для прохождения курса пилингов. Была приятно удивлена трогательной заботой о "клиенте"!
+            Получила хорошую консультацию по состоянию своей кожи, возможных домашних уходах и грамотное сопровождение
+            как во время процедуры так и в меж пилинговый период. Ирина к каждому клиенту относия с трепетом и
+            заботой!
+            Спасибо Вам огромное! Грамотный, думающий специалист! Хочется обращаться вновь и вновь!</p>
+        </div>
+        <div class="slide">
+          <img src="images/otziv5.jpg" alt="avatar" class="img-responsive">
+          <h4>Анна Глямшина</h4>
+          <p>Ирина очень хороший мастер, с большим опытом работы! Делала у нее пилинги, сразу видно,
+            что человек работает с душой, и заинтересован в достижении результата. Советую всем!</p>
+        </div>
+      </div>
+    <!--</div>-->
+    <!--</div>-->
   </section>
 </div>
 <section class="feed-back-form">
@@ -324,6 +353,7 @@
         <h2>Вы можете связаться с нами по ниже указанным
           телефонам или отправить форму и мы перезвоним.
         </h2>
+
         <!--<p>Приглашем вас на бесплатную консультацию и вкусный чаек для диагностики вашего-->
         <!--состояния кожи и личного знакомства-->
         <!--</p>-->
@@ -336,17 +366,16 @@
         </div>
         <div class="col-sm-4 col-xs-12">
           <form>
-            <!--<label for="feed-back"></label>-->
-            <textarea id="feed-back" name="feed-back"
-                      style="width: 100%; height: 140px;"
-                      placeholder="Здесь вы можете оставить свой комментарий или задать вопрос."></textarea>
+          <textarea id="feed-back" name="feed-back"
+                    style="width: 100%; height: 140px;"
+                    placeholder="Здесь вы можете оставить свой комментарий или задать вопрос.">
+
+          </textarea>
           </form>
         </div>
         <div class="col-sm-4 col-xs-12">
           <form>
-            <!--<label for="name"></label>-->
             <input type="text" id="name" placeholder="Ваше имя">
-            <label for="tel"></label>
             <input type="text" id="tel" placeholder="Номер телефона">
             <button class="submit-btn">Отправить</button>
           </form>
@@ -355,6 +384,8 @@
     </div>
   </div>
 </section>
+
+<a href="#" class="up-btn"><span class="glyphicon glyphicon-menu-up"></span></a>
 
 
 <!-- build:js(.) scripts/vendor.js -->
@@ -370,9 +401,10 @@
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.js"></script>
 <!-- endbower -->
+<script src="bxslider/jquery.bxslider.js"></script>
 <!-- endbuild -->
 
-<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<!--build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/about.js"></script>
@@ -402,13 +434,50 @@
     }, 9000)
 
 
-    $('.slick-comments').slick({
-      dots: true,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 2,
-      slidesToScroll: 1,
+//    $('.slick-comments').slick({
+//      dots: true,
+//      infinite: false,
+//      speed: 300,
+//      slidesToShow: 2,
+//      slidesToScroll: 1
+//    });
+
+
+    /**************SCROLL******************/
+    var upElem = document.getElementById('');
+    var pageYLabel = 0;
+
+    function upBtnClick(e) {
+      e.preventDefault();
+      $("html, body").animate({scrollTop: 0}, 600);
+    }
+
+    $('.up-btn').on('click', upBtnClick);
+
+    window.onscroll = function () {
+      var height = $(window).scrollTop();
+      if (height >= 1658) {
+        $('.up-btn').show('slow');
+      } else {
+        $('.up-btn').hide('slow');
+      }
+    };
+
+
+    /***********************comments-slider***************************************/
+//    $(".slider-comments .carousel-inner").slide('cycle');
+//    $(".start-slide").click(function () {
+//      $(".slider-comments").carousel('cycle');
+//    });
+
+    $('.list-of-comments').bxSlider({
+      slideWidth: 500,
+      minSlides: 3,
+      maxSlides: 3,
+      moveSlides: 1
+//        slideMargin: 10
     });
+
 
   });
 </script>
