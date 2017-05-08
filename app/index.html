@@ -8,7 +8,7 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css"/>
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Dosis|Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="bxslider/jquery.bxslider.css" rel="stylesheet">
+  <link href="styles/jquery.scrollbar.css" rel="stylesheet">
 
   <!-- endbuild -->
 </head>
@@ -48,8 +49,8 @@
           <!--Элемент с классом active отображает ссылку подсвеченной -->
           <li class="active"><a href="#">Услуги<span class="sr-only">(current)</span></a></li>
           <li><a href="#" ng-click="showPrice($event)">Прайс-лист</a></li>
-          <li><a href="#">Записаться</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#" ng-click="showForm($event)">Записаться</a></li>
+          <li><a href="#" ng-click="showContacts($event)">Контакты</a></li>
         </ul>
       </div>
     </nav>
@@ -63,13 +64,13 @@
           <div class="img-wrap"></div>
           <span class="glyphicon glyphicon-hand-right"></span><b>Индивидуальный подход к каждому клиенту!</b>
           <p>После диагностики проблем, подбирается эксклюзивный уход за Вашей кожей так же крема изготавливаются
-            во время процедуры по принципу <b>корнеотерапии.</b></p>
+            во время процедуры по принципу <i>корнеотерапии.</i></p>
           <div class="clearfix"></div>
         </li>
         <li class="about-main_item2">
           <div class="img-wrap"></div>
           <span class="glyphicon glyphicon-hand-right"></span><b>Только качетвенные материалы!</b>
-          <p>В составе косметических средств <b>отсутствуют</b> продукты, угнетающие или замедляющие нормальные
+          <p>В составе косметических средств <i>отсутствуют</i> продукты, угнетающие или замедляющие нормальные
             процессы регенерации кожи: ПАВы, эмульгаторы, отдушки, спирты, минеральные масла.</p>
           <div class="clearfix"></div>
         </li>
@@ -77,7 +78,7 @@
           <div class="img-wrap"></div>
           <span class="glyphicon glyphicon-hand-right"></span><b>Остеопатический подход в косметологии!</b>
           <p>Такое воздействие захватывает не только внешний слой кожи, а так же мышечные и костные структуры,
-            что обеспечивает <b>длительный и устойчивый эффект</b>.</p>
+            что обеспечивает <i>длительный и устойчивый эффект</i>.</p>
           <div class="clearfix"></div>
         </li>
       </ul>
@@ -97,7 +98,8 @@
           результатов, изготовление индивидуальных
           кремов, использование остеопатических методик в омоложении кожи.
         </p>
-        <button class="go-to-procedure-btn">Записаться на консультацию</button>
+        <button class="go-to-procedure-btn" ng-click="showForm($event)">Записаться на консультацию</button>
+
       </div>
     </div>
     <div class="clearfix"></div>
@@ -109,14 +111,14 @@
       <div class="col-sm-6">
         <div class="about-me-carousel">
           <div id="about-me-carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
-              <li data-target="#about-me-carousel" data-slide-to="0" class="active"></li>
-              <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
-              <li data-target="#about-me-carousel" data-slide-to="1"></li>
-              <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
-              <li data-target="#about-me-carousel" data-slide-to="2"></li>
-            </ol>
+            <!--<ol class="carousel-indicators">-->
+              <!--&lt;!&ndash; Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" &ndash;&gt;-->
+              <!--<li data-target="#about-me-carousel" data-slide-to="0" class="active"></li>-->
+              <!--&lt;!&ndash; Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" &ndash;&gt;-->
+              <!--<li data-target="#about-me-carousel" data-slide-to="1"></li>-->
+              <!--&lt;!&ndash; Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" &ndash;&gt;-->
+              <!--<li data-target="#about-me-carousel" data-slide-to="2"></li>-->
+            <!--</ol>-->
             <!-- Слайды карусели -->
             <div class="carousel-inner">
               <!-- 1 слайд -->
@@ -208,12 +210,12 @@
 
     <div class="row">
       <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
+        <div class="thumbnail scrollbar-light">
           <h3>Чистка лица.</h3>
-          <img src="images/timthumb.jpg" alt="...">
+          <img src="images/cosmetology_slide.jpg" alt="cleanFace">
           <div class="caption">
-            <h3>Чистка лица.</h3>
-            <p>Контент: чистка проводиться по системе «корнеотерапии». В начале процедуры проводится глубокое очищение
+            <!--<h3>Чистка лица.</h3>-->
+            <p>Чистка проводится по системе «корнеотерапии». В начале процедуры проводится глубокое очищение
               кожи. Затем - энзимная пиллинг-маска с помощью натуральных ферментов, глубоко очищает кожу. В результате
               кожа сама отдаёт содержимое пор и выводятся токсины. После этого на кожу наносится маска, которая
               готовится
@@ -227,10 +229,10 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="images/Relaxmedical_spa1.jpg" alt="...">
+        <div class="thumbnail scrollbar-light">
+          <h3>Уход за лицом, шеей и декольте.</h3>
+          <img src="images/kosmetolog-decolte.JPG" alt="cosmetolog">
           <div class="caption">
-            <h3>Уход за лицом, шеей и декольте.</h3>
             <p>При данных процедурах так-же используется метод восстановления кожи по системе корнеотерапии. В начале
               делается демакияж и глубокая очистка кожи. Затем наносится натуральный пилинг, который содержит в качестве
               абразивов масло жожоба. Следующим этапом идёт введение активных ингредиентов в кожу с помощью фонофореза,
@@ -245,17 +247,20 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="images/timthumb.jpg" alt="...">
+        <div class="thumbnail scrollbar-light">
+          <h3>Meder beauty sience.</h3>
+          <img src="images/meder.jpg" alt="meder">
           <div class="caption">
-            <h3>Meder beauty sience.</h3>
-            <p>Мировой эксперт в области неинвазивной(безинъекционной) коррекции возрастных изменений лица. Высокая
+
+            <p>Мировой эксперт в области неинвазивной(безинъекционной) коррекции возрастных изменений лица.</p>
+            <div id="toggleSample2" class="collapse in"><p>Высокая
               концентрация биотехнологических ингредиентов, точно просчитанные дозировки, тщательно разработанный
               протокол – гарантия результата после первого посещения.
               Данные процедуры проводятся курсом 1 раз в
               неделю, от 5 недель.
             </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a>
+            </div>
+            <p><input type="button" class="btn btn-primary" value="Toggle Button">
               <a href="#" class="btn btn-default" role="button">Button</a></p>
           </div>
         </div>
@@ -263,10 +268,10 @@
     </div>
     <div class="row">
       <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="images/fresh_young.jpg" alt="...">
+        <div class="thumbnail scrollbar-light">
+          <h3>Триада.</h3>
+          <img src="images/triada.jpg" alt="triada">
           <div class="caption">
-            <h3>Триада.</h3>
             <p>Метод послойного воздействия на лицо. Включает в себя: </p>
             <ul>
               <li>ручной массаж</li>
@@ -286,10 +291,10 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="images/Relaxmedical_spa1.jpg" alt="...">
+        <div class="thumbnail scrollbar-light">
+          <h3>Микронидлинг.</h3>
+          <img src="images/microlinding.jpg" alt="micronidling">
           <div class="caption">
-            <h3>Микронидлинг.</h3>
             <p>проводится с помощью роллера с маленькими иглами на поверхности, при движении он прокалывает кожу,
               образуя на ней микротравмы, при этом клетки кожи активно реагируют на такого рода стимуляцию и начинается
               активная выработка коллагеновых волокон. Мезороллер применяют совместно с нанесением на кожу специально
@@ -309,10 +314,10 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="images/slide2.jpg" alt="...">
+        <div class="thumbnail scrollbar-light">
+          <h3>Остеопатический сеанс.</h3>
+          <img src="images/slide2.jpg" alt="osteopatia">
           <div class="caption">
-            <h3>Остеопатический сеанс.</h3>
             <p>Остеопатическая косметология – раздел терапии направленный на возвращение здоровья тканям лица и тела,
               восстановление природной красоты, здорового цвета лица и мимической мускулатуры. Такой подход позволяет
               убрать напряжение мышц, в результате чего освобождаются эмоциональные блоки в теле, улучшается общее
@@ -332,18 +337,18 @@
     <!--<div id="slider-comments" class="">-->
     <div class="list-of-comments">
       <!--<div class="carousel-inner-bx">-->
-      <div class="slide col-xs-12">
+      <div class="slide col-xs-12 scrollbar-light">
         <img src="images/otziv1.jpg" alt="avatar" class="img-responsive">
         <h4>Анна Баранник</h4>
         <p>Рекомендую!)))С переездом Ирины в Одессу потеряла грамотного косметолога.
           Остаётся завидовать одеситам!</p>
       </div>
-      <div class="slide col-xs-12">
+      <div class="slide col-xs-12 scrollbar-light">
         <img src="images/otziv2jpg.jpg" alt="avatar" class="img-responsive">
         <h4>Светлана Маева</h4>
         <p>Поддерживаю, золотые ручки и думающий специалист!</p>
       </div>
-      <div class="slide col-xs-12">
+      <div class="slide col-xs-12 scrollbar-light">
         <img src="images/avatar.jpg" alt="avatar" class="img-responsive">
         <h4>Кристина Линник</h4>
         <p>Ирина - это настоящий профессионал и мастер своего дела! У меня была проблемная очень сухая кожа,
@@ -357,7 +362,7 @@
           А ещё - Ирина очень добрый, отзывчивый и честный человек и Косметолог с большой буквы!
           Ирочка, спасибо тебе огромное за помощь, советы и отличное настроение!</p>
       </div>
-      <div class="slide col-xs-12">
+      <div class="slide col-xs-12 scrollbar-light">
         <img src="images/otziv4.jpg" alt="avatar" class="img-responsive">
         <h4>Яна Щербак</h4>
         <p>Посещала Ирину для прохождения курса пилингов. Была приятно удивлена трогательной заботой о "клиенте"!
@@ -366,7 +371,7 @@
           заботой!
           Спасибо Вам огромное! Грамотный, думающий специалист! Хочется обращаться вновь и вновь!</p>
       </div>
-      <div class="slide col-xs-12">
+      <div class="slide col-xs-12 scrollbar-light">
         <img src="images/otziv5.jpg" alt="avatar" class="img-responsive">
         <h4>Анна Глямшина</h4>
         <p>Ирина очень хороший мастер, с большим опытом работы! Делала у нее пилинги, сразу видно,
@@ -422,16 +427,50 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
           aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+        <h4 class="modal-title" id="exampleModalLabel">Цены на услуги</h4>
       </div>
       <div class="modal-body">
-
         <price-list-directive></price-list-directive>
       </div>
     </div>
   </div>
 </div>
+<div class="modal form-popup">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        <!--<h4 class="modal-title" id="exampleModalLabel">Цены на услуги</h4>-->
+      </div>
+      <div class="modal-body">
+        <form-popup-directive></form-popup-directive>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal contacts-popup">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        <!--<h4 class="modal-title" id="exampleModalLabel">Цены на услуги</h4>-->
+      </div>
+      <div class="modal-body">
+        <!--<div class="col-sm-12">-->
+          <ul class="adress-list">
+            <li>г. Одесса, ул. Троицкая 12.</li>
+            <li>г. Харьков, пер. Кравцова 3.</li>
+            <li>тел. 050-911-95-26</li>
+            <li>068-237-34-64</li>
+          </ul>
+        <!--</div>-->
 
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
@@ -455,6 +494,9 @@
 <script src="scripts/controllers/page.controller.js"></script>
 <script src="scripts/services/price-list.service.js"></script>
 <script src="scripts/directives/price-list.directive.js"></script>
+<script src="scripts/services/form-popup.service.js"></script>
+<script src="scripts/directives/form-popup.directive.js"></script>
+<script src="scripts/jquery.scrollbar.js"></script>
 <!-- endbuild -->
 
 <script type="text/javascript">
@@ -481,7 +523,7 @@
     }, 9000)
 
 
-    /**************SCROLL******************/
+    /**************SCROLL-btn******************/
     var upElem = document.getElementById('');
     var pageYLabel = 0;
 
@@ -500,6 +542,11 @@
         $('.up-btn').hide('slow');
       }
     };
+    /******************SCROLL****************************/
+
+
+    jQuery('.scrollbar-light').scrollbar();
+
 
 
     /***********************comments-slider***************************************/
@@ -512,6 +559,11 @@
       moveSlides: 1,
       slideMargin: 10
     });
+
+    /***************************************/
+      $(".btn").click(function(){
+        $("#toggleSample2").collapse('toggle');
+      });
 
 
   });
