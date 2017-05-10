@@ -250,19 +250,22 @@ h2 {
 .main-text-wrap h1:before {
   content: url("../images/wecare_q_bg.png");
   position: absolute;
-  top: 26px;
+  top: 46px;
   right: 50%;
 
 }
 
 .main-text-wrap {
-  padding: 46px 0 28px 0;
+  padding: 86px 0 28px 0;
   color: #7b949f;
   position: relative;
   display: block;
   clear: both;
   font-weight: 300;
-  margin-bottom: 40px;
+  //margin-bottom: 40px;
+  p{
+    margin-bottom: 4%;
+  }
 
   .go-to-procedure-btn {
     color: #747f85;
@@ -327,25 +330,38 @@ h2 {
 .about-my-work {
   .thumbnail {
     position: relative;
-    overflow: auto;
-    max-height: 300px;
-
+    border: none;
+    //overflow: auto;
+    //max-height: 300px;
     //max-height: 180px;
-
   }
   h3{
     font-size: 18px;
     color: #0b425a;
-    position: absolute;
     text-align: center;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    top: 112px;
+    //background-color: rgb(247, 246, 251);
+    padding: 10px;
+    margin: 0;
+  }
 
+  .items-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+    [class*="col-"] {
+      display: flex;
+      flex-direction: column;
 
+    }
   }
   img{
     max-height: 300px;
+  }
+  .scrollbar-light > .scroll-element.scroll-y {
+    background-color: rgb(247, 246, 251);
   }
 }
 
@@ -378,6 +394,9 @@ h2 {
 .bx-wrapper {
   border: none !important;
   box-shadow: none !important;
+}
+.scroll-wrapper{
+  min-width: 300px;
 }
 .scroll-wrapper.slide:nth-child(odd){
   background-color: #f8f8f8;
@@ -568,6 +587,9 @@ h2 {
   body {
     background-size: 272% 930px;
   }
+  .navbar-header .navbar-brand {
+    font-size: 1em;
+  }
 
   .courel-wrap img {
     margin: 0 auto !important;
@@ -578,12 +600,18 @@ h2 {
   //textarea{
   //  margin-bottom: 16px;
   //}
+  .about-my-work{
+    h3{
+      background-color: rgb(247, 246, 251);
+    }
+  }
 
 }
 
 @media (max-width: 767px) {
   .courel-wrap img {
     margin: 0 auto !important;
+    float: none;
   }
   .navbar-header {
     width: 100%;
@@ -613,6 +641,11 @@ h2 {
 @media (min-width: 1200px) {
   .container {
     width: 1084px;
+  }
+  .about-my-work{
+    h3{
+      background-color: rgb(247, 246, 251);
+    }
   }
 }
 

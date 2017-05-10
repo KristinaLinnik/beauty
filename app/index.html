@@ -8,7 +8,7 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css"/>
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -29,7 +29,7 @@
       <!-- Бренд и переключатель, который вызывает меню на мобильных устройствах -->
       <div class="navbar-header">
         <!-- Бренд или логотип фирмы (обычно содержит ссылку на главную страницу) -->
-        <img class="img-responsive" src="images/icon_hair-e1404156489141.png">
+        <!--<img class="img-responsive" src="images/icon_hair-e1404156489141.png">-->
         <a href="#" class="navbar-brand">
           Профессиональная забота о вашей коже</a>
         <!-- Кнопка с полосочками, которая открывает меню на мобильных устройствах -->
@@ -83,21 +83,27 @@
         </li>
       </ul>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-6 col-xs-12">
       <div class="courel-wrap">
         <img id="top-slide1" class="img-responsive" alt="" src="images/cosmetolog_prof_slide1jpg.jpg"/>
       </div>
     </div>
+    <div class="clearfix"></div>
     <div class="col-sm-12 text-center">
       <div class="main-text-wrap">
-        <h1>Здравствуйте и добро пожаловать.</h1>
-        <p>Меня зовут Ирина, разрешите пригласить вас в свой мир косметологии. За многие годы работы
-          я пришла к определённой концепции по сохранению красоты и
-          здоровья кожи, которую имею возможность практиковать в своей работе.
-          А именно безинъекционное омоложение кожи, массаж и разноплановые уходы в зависимости от необходимых
-          результатов, изготовление индивидуальных
-          кремов, использование остеопатических методик в омоложении кожи.
+        <h1>Здравствуйте, разрешите пригласить вас в свой мир косметологии.</h1>
+        <p>Меня зовут Ирина, я косметолог с более чем 15-ти летним опытом работы.
+          Моя главная цель - сделать своих клиентов еще краше и счастливие, используя при этом безопасные и эффективные
+          методы.
+          Процедуры омоложения и работа с проблемной кожей проводится с максимальной заботой и бережностью, используя
+          только качественные
+          материалы, многолетний опыт, инновационные и прогрессивные методики.
         </p>
+
+
+        <p>Добро пожаловать в мир красоты, здоровья и гармонии!</p>
+
+
         <button class="go-to-procedure-btn" ng-click="showForm($event)">Записаться на консультацию</button>
 
       </div>
@@ -112,31 +118,31 @@
         <div class="about-me-carousel">
           <div id="about-me-carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
             <!--<ol class="carousel-indicators">-->
-              <!--&lt;!&ndash; Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" &ndash;&gt;-->
-              <!--<li data-target="#about-me-carousel" data-slide-to="0" class="active"></li>-->
-              <!--&lt;!&ndash; Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" &ndash;&gt;-->
-              <!--<li data-target="#about-me-carousel" data-slide-to="1"></li>-->
-              <!--&lt;!&ndash; Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" &ndash;&gt;-->
-              <!--<li data-target="#about-me-carousel" data-slide-to="2"></li>-->
+            <!--&lt;!&ndash; Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" &ndash;&gt;-->
+            <!--<li data-target="#about-me-carousel" data-slide-to="0" class="active"></li>-->
+            <!--&lt;!&ndash; Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" &ndash;&gt;-->
+            <!--<li data-target="#about-me-carousel" data-slide-to="1"></li>-->
+            <!--&lt;!&ndash; Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" &ndash;&gt;-->
+            <!--<li data-target="#about-me-carousel" data-slide-to="2"></li>-->
             <!--</ol>-->
             <!-- Слайды карусели -->
             <div class="carousel-inner">
               <!-- 1 слайд -->
               <div class="active item slide-1">
                 <div class="carousel-caption">
-                  <h3>Заголовок 1 слайда</h3>
+                  <h3>Доверьтесь профессионалу</h3>
                   <!--<p>Описание 1 слайда...</p>-->
                 </div>
               </div>
               <div class="item slide-2">
                 <div class="carousel-caption">
-                  <h3>Заголовок 2 слайда</h3>
+                  <h3>Будьте неотразимы</h3>
                   <!--<p>Описание 2 слайда...</p>-->
                 </div>
               </div>
               <div class="item slide-3">
                 <div class="carousel-caption">
-                  <h3>Заголовок 3 слайда</h3>
+                  <h3>Позаботьтесь и вашей коже</h3>
                   <!--<p>Описание 3 слайда...</p>-->
                 </div>
               </div>
@@ -206,25 +212,21 @@
   </section>
 
   <section class="about-my-work">
-    <h2 class="text-center">Подробнее о процедурах.</h2>
 
-    <div class="row">
+    <h2 class="text-center">Подробнее о процедурах.</h2>
+    <div class="items-wrap">
       <div class="col-sm-6 col-md-4">
-        <div class="thumbnail scrollbar-light">
+        <div class="thumbnail">
           <h3>Чистка лица.</h3>
           <img src="images/cosmetology_slide.jpg" alt="cleanFace">
           <div class="caption">
-            <!--<h3>Чистка лица.</h3>-->
             <p>Чистка проводится по системе «корнеотерапии». В начале процедуры проводится глубокое очищение
-              кожи. Затем - энзимная пиллинг-маска с помощью натуральных ферментов, глубоко очищает кожу. В результате
+              кожи. Затем- энзимная пиллинг-маска с помощью натуральных ферментов, глубоко очищает кожу. В результате
               кожа сама отдаёт содержимое пор и выводятся токсины. После этого на кожу наносится маска, которая
               готовится
               непосредственно перед нанесением с учётом потребностей данной кожи. В завершении процедуры наноситься
               крем,
               который так-же готовиться индивидуально.
-            </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a>
-              <a href="#" class="btn btn-default" role="button">Button</a></p>
           </div>
         </div>
       </div>
@@ -234,15 +236,16 @@
           <img src="images/kosmetolog-decolte.JPG" alt="cosmetolog">
           <div class="caption">
             <p>При данных процедурах так-же используется метод восстановления кожи по системе корнеотерапии. В начале
-              делается демакияж и глубокая очистка кожи. Затем наносится натуральный пилинг, который содержит в качестве
-              абразивов масло жожоба. Следующим этапом идёт введение активных ингредиентов в кожу с помощью фонофореза,
+              делается демакияж и глубокая очистка кожи. Затем
+              наносится натуральный пилинг, который содержит в
+              качестве
+              абразивов масло жожоба. Следующим этапом идёт введение активных ингредиентов в кожу с помощью
+              фонофореза,
               концентраты подбираются индивидуально по состоянию кожи на данный момент. Затем проводится
               массаж лица, шеи и декольте. После чего наносится маска, которая готовится extempore. В конце
               наносится крем, приготовленный при вас в ходе процедуры.
               Такой уход проводится курсом 1 раз внеделю, в течении 6 недель.
             </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a>
-              <a href="#" class="btn btn-default" role="button">Button</a></p>
           </div>
         </div>
       </div>
@@ -251,22 +254,18 @@
           <h3>Meder beauty sience.</h3>
           <img src="images/meder.jpg" alt="meder">
           <div class="caption">
-
-            <p>Мировой эксперт в области неинвазивной(безинъекционной) коррекции возрастных изменений лица.</p>
-            <div id="toggleSample2" class="collapse in"><p>Высокая
+            <p>Мировой эксперт в области неинвазивной(безинъекционной) коррекции возрастных изменений лица. Высокая
               концентрация биотехнологических ингредиентов, точно просчитанные дозировки, тщательно разработанный
               протокол – гарантия результата после первого посещения.
               Данные процедуры проводятся курсом 1 раз в
               неделю, от 5 недель.
             </p>
-            </div>
-            <p><input type="button" class="btn btn-primary" value="Toggle Button">
-              <a href="#" class="btn btn-default" role="button">Button</a></p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
+      <!--</div>-->
+      <!--<div class="clearfix"></div>-->
+      <!--<div class="row">-->
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail scrollbar-light">
           <h3>Триада.</h3>
@@ -283,10 +282,8 @@
               воздействуем на мышцы вибромодулем, это даёт хорошую подтяжку лица, затем проводим
               миостимуляцию(гимнастика для мышц). Такая трёхступенчатая процедура
               равносильна безоперационной подтяжки лица.
-              Делается курсом 10 процедур, ежедневно, 1 раз в год начиная с 25 лет.
+              Длительность курса: 10 процедур, ежедневно, 1 раз в год, с 25 лет.
             </p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a>
-              <a href="#" class="btn btn-default" role="button">Button</a></p>
           </div>
         </div>
       </div>
@@ -296,20 +293,17 @@
           <img src="images/microlinding.jpg" alt="micronidling">
           <div class="caption">
             <p>проводится с помощью роллера с маленькими иглами на поверхности, при движении он прокалывает кожу,
-              образуя на ней микротравмы, при этом клетки кожи активно реагируют на такого рода стимуляцию и начинается
+              образуя на ней микротравмы, при этом клетки кожи активно реагируют на такого рода стимуляцию и
+              начинается
               активная выработка коллагеновых волокон. Мезороллер применяют совместно с нанесением на кожу специально
               подобранных средств в зависимости от проблемы.
-            <p>Результат:</p>
             <ul>
               <li>улучшение общего состояния кожи;</li>
               <li>уменьшение выраженности морщин;</li>
               <li>осветление пегментных пятен;</li>
               <li>кожа выглядит помолодевшей и подтянутой;</li>
             </ul>
-            Проводится курсом от 4 процедур 1 раз в неделю. Раз в год.
-
-            <p><a href="#" class="btn btn-primary" role="button">Button</a>
-              <a href="#" class="btn btn-default" role="button">Button</a></p>
+            Длительность курса: от 4 процедур 1 раз в неделю. Раз в год.
           </div>
         </div>
       </div>
@@ -323,8 +317,6 @@
               убрать напряжение мышц, в результате чего освобождаются эмоциональные блоки в теле, улучшается общее
               состояние, настроение становится лучше, меняется выражение глаз. Эта процедура гармонизации души и
               тела.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a>
-              <a href="#" class="btn btn-default" role="button">Button</a></p>
           </div>
         </div>
       </div>
@@ -386,13 +378,11 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
-        <h2>Вы можете связаться с нами по ниже указанным
-          телефонам или отправить форму и мы перезвоним.
+        <h2>В форме ниже вы можете заказать обратный звонок или связаться со мной по телефону.
         </h2>
         <div class="col-sm-4">
           <ul class="adress-list">
             <li>г. Одесса, ул. Троицкая 12.</li>
-            <li>г. Харьков, пер. Кравцова 3.</li>
             <li>тел. 050-911-95-26</li>
             <li>068-237-34-64</li>
           </ul>
@@ -459,12 +449,11 @@
       </div>
       <div class="modal-body">
         <!--<div class="col-sm-12">-->
-          <ul class="adress-list">
-            <li>г. Одесса, ул. Троицкая 12.</li>
-            <li>г. Харьков, пер. Кравцова 3.</li>
-            <li>тел. 050-911-95-26</li>
-            <li>068-237-34-64</li>
-          </ul>
+        <ul class="adress-list">
+          <li>г. Одесса, ул. Троицкая 12.</li>
+          <li>тел. 050-911-95-26</li>
+          <li>068-237-34-64</li>
+        </ul>
         <!--</div>-->
 
       </div>
@@ -484,6 +473,7 @@
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.js"></script>
+<!--<script src="bower_components/readmore-js/readmore.js"></script>-->
 <!-- endbower -->
 <script src="bxslider/jquery.bxslider.js"></script>
 <!-- endbuild -->
@@ -497,6 +487,7 @@
 <script src="scripts/services/form-popup.service.js"></script>
 <script src="scripts/directives/form-popup.directive.js"></script>
 <script src="scripts/jquery.scrollbar.js"></script>
+<!--<script src="../node_modules/readmore-js/readmore.min.js"></script>-->
 <!-- endbuild -->
 
 <script type="text/javascript">
@@ -536,7 +527,7 @@
 
     window.onscroll = function () {
       var height = $(window).scrollTop();
-      if (height >= 1658) {
+      if (height >= 1200) {
         $('.up-btn').show('slow');
       } else {
         $('.up-btn').hide('slow');
@@ -546,7 +537,6 @@
 
 
     jQuery('.scrollbar-light').scrollbar();
-
 
 
     /***********************comments-slider***************************************/
@@ -561,9 +551,17 @@
     });
 
     /***************************************/
-      $(".btn").click(function(){
-        $("#toggleSample2").collapse('toggle');
-      });
+//    $(".btn").click(function () {
+//      $("toggleSample").collapse('toggle');
+//    });
+
+    /*read-more-btn*/
+
+//    $('article').readmore({
+//      maxHeight: 140,
+//      moreLink: '<a href="#">Подробнее</a>',
+//      lessLink: '<a href="#">Скрыть</a>'
+//    });
 
 
   });
