@@ -4,11 +4,13 @@
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./images/FFFavicon.png" rel="icon">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css"/>
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -19,34 +21,17 @@
   <link href="bxslider/jquery.bxslider.css" rel="stylesheet">
   <link href="styles/jquery.scrollbar.css" rel="stylesheet">
 
-  <!-- endbuild -->
 </head>
 <body ng-app="beautyApp" id="up-scroll" ng-controller="pageController">
 <div class="container">
   <div class="row">
-    <!-- Меню navbar -->
     <nav class="navbar navbar-default">
-      <!-- Бренд и переключатель, который вызывает меню на мобильных устройствах -->
       <div class="navbar-header">
-        <!-- Бренд или логотип фирмы (обычно содержит ссылку на главную страницу) -->
-        <!--<img class="img-responsive" src="images/icon_hair-e1404156489141.png">-->
         <a href="#" class="navbar-brand">
           Профессиональная забота о вашей коже</a>
-        <!-- Кнопка с полосочками, которая открывает меню на мобильных устройствах -->
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu"
-                aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
       </div>
-
-      <!-- Содержимое меню (коллекция навигационных ссылок, формы и др.) -->
-      <div class="collapse navbar-collapse" id="main-menu">
-        <!-- Список ссылок, расположенных слева -->
-        <ul class="nav navbar-nav navbar-right">
-          <!--Элемент с классом active отображает ссылку подсвеченной -->
+      <div class="navbar-collapse" id="main-menu">
+        <ul class="nav navbar-nav">
           <li class="active"><a href="#">Услуги<span class="sr-only">(current)</span></a></li>
           <li><a href="#" ng-click="showPrice($event)">Прайс-лист</a></li>
           <li><a href="#" ng-click="showForm($event)">Записаться</a></li>
@@ -55,28 +40,31 @@
       </div>
     </nav>
   </div>
-
   <section class="about-first-section">
     <div class="col-sm-6 padding-none">
       <ul class="about-main-list">
         <li class="about-main_item1">
-          <!--<img src="img/beautySkin.jpg" class="img-responsive" alt=""/>-->
           <div class="img-wrap"></div>
-          <span class="glyphicon glyphicon-hand-right"></span><b>Индивидуальный подход к каждому клиенту!</b>
-          <p>После диагностики проблем, подбирается эксклюзивный уход за Вашей кожей так же крема изготавливаются
-            во время процедуры по принципу <i>корнеотерапии.</i></p>
+          <h2>
+            Индивидуальный подход к каждому клиенту!
+          </h2>
+          <p>После диагностики состояния кожи подбирается схема уходовых процедур, построенных по принципу
+            <i>корнеотерапии.</i></p>
           <div class="clearfix"></div>
         </li>
         <li class="about-main_item2">
           <div class="img-wrap"></div>
-          <span class="glyphicon glyphicon-hand-right"></span><b>Только качетвенные материалы!</b>
+          <h2>
+            Только качественные материалы!</h2>
           <p>В составе косметических средств <i>отсутствуют</i> продукты, угнетающие или замедляющие нормальные
             процессы регенерации кожи: ПАВы, эмульгаторы, отдушки, спирты, минеральные масла.</p>
           <div class="clearfix"></div>
         </li>
         <li class="about-main_item3">
           <div class="img-wrap"></div>
-          <span class="glyphicon glyphicon-hand-right"></span><b>Остеопатический подход в косметологии!</b>
+          <h2>
+            Остеопатический подход в косметологии!
+          </h2>
           <p>Такое воздействие захватывает не только внешний слой кожи, а так же мышечные и костные структуры,
             что обеспечивает <i>длительный и устойчивый эффект</i>.</p>
           <div class="clearfix"></div>
@@ -91,21 +79,18 @@
     <div class="clearfix"></div>
     <div class="col-sm-12 text-center">
       <div class="main-text-wrap">
-        <h1>Здравствуйте, разрешите пригласить вас в свой мир косметологии.</h1>
-        <p>Меня зовут Ирина, я косметолог с более чем 15-ти летним опытом работы.
-          Моя главная цель - сделать своих клиентов еще краше и счастливие, используя при этом безопасные и эффективные
-          методы.
-          Процедуры омоложения и работа с проблемной кожей проводится с максимальной заботой и бережностью, используя
-          только качественные
-          материалы, многолетний опыт, инновационные и прогрессивные методики.
+        <h1>Доброго времени суток!</h1>
+        <p>
+          Меня зовут Ирина, я косметолог с более 15 летним опытом работы и я хочу пригласить Вас в
+          свой мир - мир косметологии, в котором все подчинено одному закону - оставаться привлекательным в любых
+          ситуациях и в любом возрасте. Моя цель- максимально отсрочить внешние проявления процессов старения,
+          помочь выглядеть красиво, иметь привлекательную внешность. Ведь о здоровье и красоте человека судят в первую
+          очередь по состоянию его кожи. А в системе человеческих ценностей красота и здоровье занимают особое место.
+          Мои процедуры проводятся с максимальной заботой и бережностью, используются только качественные материалы,
+          иннновационые и прогрессивные методики.
         </p>
-
-
         <p>Добро пожаловать в мир красоты, здоровья и гармонии!</p>
-
-
         <button class="go-to-procedure-btn" ng-click="showForm($event)">Записаться на консультацию</button>
-
       </div>
     </div>
     <div class="clearfix"></div>
@@ -117,53 +102,37 @@
       <div class="col-sm-6">
         <div class="about-me-carousel">
           <div id="about-me-carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-            <!--<ol class="carousel-indicators">-->
-            <!--&lt;!&ndash; Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" &ndash;&gt;-->
-            <!--<li data-target="#about-me-carousel" data-slide-to="0" class="active"></li>-->
-            <!--&lt;!&ndash; Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" &ndash;&gt;-->
-            <!--<li data-target="#about-me-carousel" data-slide-to="1"></li>-->
-            <!--&lt;!&ndash; Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" &ndash;&gt;-->
-            <!--<li data-target="#about-me-carousel" data-slide-to="2"></li>-->
-            <!--</ol>-->
-            <!-- Слайды карусели -->
             <div class="carousel-inner">
-              <!-- 1 слайд -->
               <div class="active item slide-1">
                 <div class="carousel-caption">
-                  <h3>Доверьтесь профессионалу</h3>
-                  <!--<p>Описание 1 слайда...</p>-->
+                  <h3>Доверьтесь профессионалу!</h3>
                 </div>
               </div>
               <div class="item slide-2">
                 <div class="carousel-caption">
-                  <h3>Будьте неотразимы</h3>
-                  <!--<p>Описание 2 слайда...</p>-->
+                  <h3>Позаботьтесь и вашей коже!</h3>
                 </div>
               </div>
               <div class="item slide-3">
                 <div class="carousel-caption">
-                  <h3>Позаботьтесь и вашей коже</h3>
-                  <!--<p>Описание 3 слайда...</p>-->
+                  <h3>Будьте неотразимы!</h3>
+
                 </div>
               </div>
             </div>
           </div>
-          <!-- Навигация для карусели -->
-          <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
           <a class="carousel-control left" href="#about-me-carousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
-          <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
           <a class="carousel-control right" href="#about-me-carousel" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div>
       </div>
       <div class="col-sm-6">
-        <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="active">
-            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Уникальность процедур</a>
+            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">О качестве</a>
           </li>
           <li role="presentation">
             <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Прайс-лист</a>
@@ -171,10 +140,7 @@
           <li role="presentation">
             <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Скидки</a>
           </li>
-
         </ul>
-
-        <!-- Tab panes -->
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="home">
             <ul class="tab-list">
@@ -195,24 +161,16 @@
           </div>
           <div role="tabpanel" class="tab-pane" id="messages">
             <ul class="sales">
-              <li>При первом посещении, скидка на любую
-                процедуру – 30%.
-              </li>
               <li>В день рождения, скидка 20%.</li>
               <li>При оплате курса процедур, скидка 10%.</li>
-              <!--<li>А за хороший одесский анекдот – 5%, таки да.</li>-->
             </ul>
-
           </div>
-
         </div>
-
       </div>
     </div>
   </section>
 
   <section class="about-my-work">
-
     <h2 class="text-center">Подробнее о процедурах.</h2>
     <div class="items-wrap">
       <div class="col-sm-6 col-md-4">
@@ -221,19 +179,17 @@
           <img src="images/cosmetology_slide.jpg" alt="cleanFace">
           <div class="caption">
             <p>Чистка проводится по системе «корнеотерапии». В начале процедуры проводится глубокое очищение
-              кожи. Затем- энзимная пиллинг-маска с помощью натуральных ферментов, глубоко очищает кожу. В результате
+              кожи. Затем - энзимная пиллинг-маска с помощью натуральных ферментов, глубоко очищает кожу. В результате
               кожа сама отдаёт содержимое пор и выводятся токсины. После этого на кожу наносится маска, которая
-              готовится
-              непосредственно перед нанесением с учётом потребностей данной кожи. В завершении процедуры наноситься
-              крем,
-              который так-же готовиться индивидуально.
+              готовится непосредственно перед нанесением с учётом потребностей данной кожи. В завершении процедуры
+              наносится крем, который так-же готовится индивидуально.
           </div>
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="thumbnail scrollbar-light">
+        <div class="thumbnail">
           <h3>Уход за лицом, шеей и декольте.</h3>
-          <img src="images/kosmetolog-decolte.JPG" alt="cosmetolog">
+          <img src="images/kosmetolog-decolte.jpg" alt="cosmetolog">
           <div class="caption">
             <p>При данных процедурах так-же используется метод восстановления кожи по системе корнеотерапии. В начале
               делается демакияж и глубокая очистка кожи. Затем
@@ -250,7 +206,7 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="thumbnail scrollbar-light">
+        <div class="thumbnail">
           <h3>Meder beauty sience.</h3>
           <img src="images/meder.jpg" alt="meder">
           <div class="caption">
@@ -263,11 +219,8 @@
           </div>
         </div>
       </div>
-      <!--</div>-->
-      <!--<div class="clearfix"></div>-->
-      <!--<div class="row">-->
       <div class="col-sm-6 col-md-4">
-        <div class="thumbnail scrollbar-light">
+        <div class="thumbnail">
           <h3>Триада.</h3>
           <img src="images/triada.jpg" alt="triada">
           <div class="caption">
@@ -288,7 +241,7 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="thumbnail scrollbar-light">
+        <div class="thumbnail">
           <h3>Микронидлинг.</h3>
           <img src="images/microlinding.jpg" alt="micronidling">
           <div class="caption">
@@ -308,9 +261,9 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="thumbnail scrollbar-light">
+        <div class="thumbnail">
           <h3>Остеопатический сеанс.</h3>
-          <img src="images/slide2.jpg" alt="osteopatia">
+          <img src="images/osteopatia2.jpg" alt="osteopatia">
           <div class="caption">
             <p>Остеопатическая косметология – раздел терапии направленный на возвращение здоровья тканям лица и тела,
               восстановление природной красоты, здорового цвета лица и мимической мускулатуры. Такой подход позволяет
@@ -322,13 +275,9 @@
       </div>
     </div>
   </section>
-
-
   <section class="comments-about-me">
     <h2 class="text-center">Отзывы о работе</h2>
-    <!--<div id="slider-comments" class="">-->
     <div class="list-of-comments">
-      <!--<div class="carousel-inner-bx">-->
       <div class="slide col-xs-12 scrollbar-light">
         <img src="images/otziv1.jpg" alt="avatar" class="img-responsive">
         <h4>Анна Баранник</h4>
@@ -357,21 +306,32 @@
       <div class="slide col-xs-12 scrollbar-light">
         <img src="images/otziv4.jpg" alt="avatar" class="img-responsive">
         <h4>Яна Щербак</h4>
-        <p>Посещала Ирину для прохождения курса пилингов. Была приятно удивлена трогательной заботой о "клиенте"!
+        <p>Посещала Ирину для прохождения курса по восстановлению кожи после пилинга..
+          Была приятно удивлена трогательной заботой о "клиенте"!
           Получила хорошую консультацию по состоянию своей кожи, возможных домашних уходах и грамотное сопровождение
-          как во время процедуры так и в меж пилинговый период. Ирина к каждому клиенту относия с трепетом и
+          как во время процедуры так и после. Ирина к каждому клиенту относия с трепетом и
           заботой!
           Спасибо Вам огромное! Грамотный, думающий специалист! Хочется обращаться вновь и вновь!</p>
       </div>
       <div class="slide col-xs-12 scrollbar-light">
         <img src="images/otziv5.jpg" alt="avatar" class="img-responsive">
         <h4>Анна Глямшина</h4>
-        <p>Ирина очень хороший мастер, с большим опытом работы! Делала у нее пилинги, сразу видно,
+        <p>Ирина очень хороший мастер, с большим опытом работы! Хожу на чистку лица, сразу видно,
           что человек работает с душой, и заинтересован в достижении результата. Советую всем!</p>
       </div>
+
+      <div class="slide col-xs-12 scrollbar-light">
+        <img src="images/otziv10.jpg" alt="avatar" class="img-responsive">
+        <h4>Елена Самойлова</h4>
+        <p>Прекрасному человеку и квалифицированному специалисту удачи на новом месте!</p>
+      </div>
+      <div class="slide col-xs-12 scrollbar-light">
+        <img src="images/otziv9.jpg" alt="avatar" class="img-responsive">
+        <h4>Лилу Усачева</h4>
+        <p>Девушки Одессы! Рекомендую вам не пропустить приглашение Ирины.
+          Довериться, может и сложно, но не пожалеете.</p>
+      </div>
     </div>
-    <!--</div>-->
-    <!--</div>-->
   </section>
 </div>
 <section class="feed-back-form">
@@ -386,30 +346,40 @@
             <li>тел. 050-911-95-26</li>
             <li>068-237-34-64</li>
           </ul>
+          <div class="social-btn">
+            <a target="_blank"
+               href="https://www.facebook.com/irina.torchinska/about?lst=100002478434320%3A100002764230737%3A1495111821">
+              <img class="fb-social" src="images/facebook-icon.png">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/kosmetolog.odessa/?hl=ru">
+              <img src="images/insta-icon.png">
+            </a>
+          </div>
+
         </div>
-        <div class="col-sm-4 col-xs-12">
-          <form>
-          <textarea id="feed-back" name="feed-back"
+        <form ng-if="!mailSent" action="/send-mail.php" method="POST" ng-submit="onSubmit($event)">
+          <div class="col-sm-4 col-xs-12">
+            <textarea id="feed-back" name="feed-back" ng-model="form.message"
                     style="width: 100%; height: 140px;"
                     placeholder="Здесь вы можете оставить свой комментарий или задать вопрос."></textarea>
-          </form>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <form>
-            <input type="text" id="name" placeholder="Ваше имя">
-            <input type="text" id="tel" placeholder="Номер телефона">
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <input type="text" id="name" placeholder="Ваше имя" ng-model="form.name">
+            <input type="text" id="tel" placeholder="Номер телефона" ng-model="form.phone">
             <button class="submit-btn">Отправить</button>
-          </form>
+          </div>
+        </form>
+        <div ng-if="mailSent" class="mail-sent">
+          Сообщение успешно отправлено!
         </div>
+
       </div>
     </div>
   </div>
 </section>
-
 <a href="#" class="up-btn"><span class="glyphicon glyphicon-menu-up"></span>
   <span class="glyphicon glyphicon-menu-up sec2"></span>
 </a>
-
 
 <div class="modal price-popup">
   <div class="modal-dialog" role="document">
@@ -431,7 +401,6 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
           aria-hidden="true">&times;</span></button>
-        <!--<h4 class="modal-title" id="exampleModalLabel">Цены на услуги</h4>-->
       </div>
       <div class="modal-body">
         <form-popup-directive></form-popup-directive>
@@ -445,17 +414,22 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
           aria-hidden="true">&times;</span></button>
-        <!--<h4 class="modal-title" id="exampleModalLabel">Цены на услуги</h4>-->
       </div>
       <div class="modal-body">
-        <!--<div class="col-sm-12">-->
         <ul class="adress-list">
           <li>г. Одесса, ул. Троицкая 12.</li>
           <li>тел. 050-911-95-26</li>
           <li>068-237-34-64</li>
         </ul>
-        <!--</div>-->
-
+        <div class="social-btn">
+          <a target="_blank"
+             href="https://www.facebook.com/irina.torchinska/about?lst=100002478434320%3A100002764230737%3A1495111821">
+            <img class="fb-social" src="images/facebook-icon.png">
+          </a>
+          <a target="_blank" href="https://www.instagram.com/kosmetolog.odessa/?hl=ru">
+            <img src="images/insta-icon.png">
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -473,10 +447,10 @@
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.js"></script>
-<!--<script src="bower_components/readmore-js/readmore.js"></script>-->
 <!-- endbower -->
-<script src="bxslider/jquery.bxslider.js"></script>
 <!-- endbuild -->
+
+<script src="bxslider/jquery.bxslider.js"></script>
 
 <!--build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>

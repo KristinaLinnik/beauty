@@ -6,7 +6,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   font-size: 16px;
-  //line-height: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: 'Roboto', sans-serif;
@@ -14,8 +13,7 @@ body {
   position: relative;
   min-height: 100%;
   background: url("../images/wecare_body_bg.png") no-repeat 50% 0;
-  //background-size: 160% 648px;
-  background-size: auto 730px;
+  background-size: 240% 740px;
 }
 
 h1 {
@@ -31,10 +29,21 @@ h2 {
 .padding-none {
   padding: 0;
 }
+.collapse {
+  display: block !important;
+}
 
 /*********************NAVIGATION***********/
-.navbar-default {
-  //padding: 4% 0;
+.navbar-collapse {
+ border: none;
+  box-shadow: none;
+  text-align: center;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin:0;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -64,9 +73,16 @@ h2 {
   transition-duration: 0.4s;
   transition-timing-function: ease;
   transition-delay: initial;
+  //padding-right: 0;
+  padding: 18px 22px;
+
+}
+.navbar-default{
+  padding-top: 24px;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
   cursor: pointer;
   color: #ffe583;
 }
@@ -79,7 +95,7 @@ h2 {
 }
 
 .navbar-header {
-  width: 50%;
+  width: 40%;
   img {
     height: auto;
     width: 98px;
@@ -87,7 +103,6 @@ h2 {
   }
   .navbar-brand {
     float: left;
-    width: 60%;
     color: #ffe583;
     font-family: 'Lobster', cursive;
     font-size: 1.4em;
@@ -101,20 +116,20 @@ h2 {
 
 }
 
-/* color: #555; */
-/* background-color: #e7e7e7; */
-
 /*********************NAVIGATION         END***********/
 
 .about-main-list {
   padding-left: 0;
   color: #eeeeee;
-  span {
-    margin-right: 8px;
-    color: #ffe583;
+  h2 {
+    color: #eeeeee;
+    margin:0;
+
   }
-  b {
-    letter-spacing: 0.8px;
+  h2:before{
+    content: url("../images/cosmetology_check1.png");
+    color: #fff;
+
   }
   li {
     list-style: none;
@@ -139,7 +154,7 @@ h2 {
     background-size: cover;
   }
   .about-main_item3 .img-wrap {
-    background: url("../images/face_beauty.jpg") no-repeat;
+    background: url("../images/osteopatia.jpg") no-repeat;
     background-size: cover;
   }
 }
@@ -149,21 +164,14 @@ h2 {
 .courel-wrap img {
   float: right;
   border-radius: 4px;
-  //max-height: 422px;
-  //width: 72%;
-
 }
 
 /***********************************ABOUT-ME SECTION*********************************/
 .about-me {
   .tab-content .tab-list {
-    //counter-reset: list 0;
-    padding-left: 0;
+    padding-left: 12px;
   }
 
-  .tab-content .tab-list li {
-    list-style-type: decimal;
-  }
   .sales li {
     padding-bottom: 16px;
   }
@@ -173,8 +181,6 @@ h2 {
 /**********************about-me-carousel******************/
 
 .about-me-carousel {
-  //positon: relative;
-
   .carousel-caption{
     position: relative;
     left: 0;
@@ -186,13 +192,14 @@ h2 {
     background-image: none;
   }
   .carousel-caption h3 {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin: 0;
-    color: #666;
-    width: 100%;
-    padding: 22px 0;
-    top: 236px;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 0;
+      color: #666;
+      width: 100%;
+      padding: 10px 0;
+      top: 268px;
+      font-size: 20px;
   }
   .item {
     text-align: center;
@@ -207,14 +214,14 @@ h2 {
   }
 
   .slide-2 {
-    background: url('../images/BoxImgA.jpg') no-repeat;
+    background: url('../images/clean_skin.jpg') no-repeat;
     background-size: cover;
     border-radius: 6px;
 
   }
 
   .slide-3 {
-    background: url('../images/home_57.jpg') no-repeat;
+    background: url('../images/slide-3.jpg') no-repeat;
     background-size: cover;
     border-radius: 6px;
 
@@ -262,21 +269,36 @@ h2 {
   display: block;
   clear: both;
   font-weight: 300;
-  //margin-bottom: 40px;
   p{
     margin-bottom: 4%;
   }
 
   .go-to-procedure-btn {
     color: #747f85;
-    background-color: #ffe583;
     border: none;
     border-radius: 4px;
     padding: 12px 30px;
+    /* IE10+ */
+    background-image: -ms-linear-gradient(top, rgba(255,229,131,1) 0%, rgba(255,190,59,1) 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, rgba(255,229,131,1) 0%, rgba(255,190,59,1) 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(top, rgba(255,229,131,1) 0%, rgba(255,190,59,1) 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,229,131,1)), color-stop(100, rgba(255,190,59,1)));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, rgba(255,229,131,1) 0%, rgba(255,190,59,1) 100%);
+
+    /* W3C Markup */
+    background-image: linear-gradient(to bottom, rgba(255,229,131,1) 0%, rgba(255,190,59,1) 100%);
   }
   .go-to-procedure-btn:hover {
     //border-color: #747f85;
-    box-shadow: inset 0 0 6px #747f85;
+    box-shadow: inset 0 0 6px #efa549;
 
   }
 
@@ -286,7 +308,6 @@ h2 {
 
 .nav-tabs > li > a {
   color: #7b949f;
-  //font-size: 1.4em;
   padding: 6px;
   font-weight: 300;
   border-top: none;
@@ -331,16 +352,12 @@ h2 {
   .thumbnail {
     position: relative;
     border: none;
-    //overflow: auto;
-    //max-height: 300px;
-    //max-height: 180px;
   }
   h3{
     font-size: 18px;
     color: #0b425a;
     text-align: center;
     width: 100%;
-    //background-color: rgb(247, 246, 251);
     padding: 10px;
     margin: 0;
   }
@@ -376,10 +393,7 @@ h2 {
     height: 300px;
     margin-right: 3px;
     overflow: auto;
-    //box-shadow: 0 0 5px #ccc;
-    //border: 5px solid #fff;
-    //-moz-box-shadow: 0 0 5px #ccc;
-    //-webkit-box-shadow: 0 0 5px #ccc;
+
   }
   img {
     width: 30%;
@@ -420,18 +434,34 @@ h2 {
 .feed-back-form {
   background: url('../images/wecare_contactus_bg.jpg') no-repeat;
   background-size: cover;
-  padding: 4% 0 0 0;
+  padding: 2% 0 0 0;
   h2 {
     color: #eee;
+    padding-bottom: 4%;
   }
   p {
-    //font-size: 1.6em;
-    //line-height: 1em;
     padding-bottom: 4%;
   }
   ul {
     list-style: none;
     padding-left: 0;
+  }
+  .social-btn{
+    text-align: center;
+  }
+  img{
+    width: 30px;
+    height: 30px;
+
+  }
+  .fb-social{
+    width: 36px;
+    height: 36px;
+
+  }
+
+  form{
+    padding: 0 0 4%;
   }
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -481,7 +511,7 @@ h2 {
     margin-bottom: 20px;
     background-color: #747f85;
     border: none;
-    padding: 4px 8px;
+    padding: 8px;
     color: #fff;
   }
   #tel {
@@ -530,7 +560,6 @@ h2 {
   font-size: 22px;
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.3);
-  //visibility: hidden;
   display: none;
 
   .glyphicon-menu-up {
@@ -548,28 +577,34 @@ h2 {
 /***************************POPUP-PRICE**************************************/
 .price-popup,
 .contacts-popup,
-.form-popup{
+.form-popup {
   .modal-content {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
     background-color: #6b7e84;
+    font-size: 0.9em;
   }
-  button.close{
+  button.close {
     color: white;
+    font-size: 30px;
   }
-  td{
-    border-top: 1px solid #a9abaf;
-  }
-}
-/****************************FORM-POPUP*******************************************/
-.form-popup{
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: inherit;
 
+  }
 }
+
 
 /*****************************CONTACTS-POPUP*************************************************/
 .contacts-popup{
 
   .adress-list{
     text-align: center;
+    padding: 0;
 
   }
   li{
@@ -577,44 +612,151 @@ h2 {
     padding: 0;
     color: white;
   }
+  .modal-body{
+    padding: 10px 0;
+    font-size: 1.2em;
+  }
+  .modal-header {
+    padding: 10px 15px;
+    border: none;
+  }
+  .social-btn{
+    text-align: center;
+  }
+  img{
+    width: 30px;
+    height: 30px;
+
+  }
+  .fb-social{
+    width: 36px;
+    height: 36px;
+  }
 }
 
 
-/****media******/
-//824px
+/****************************************MEDIA****************************************/
+
 
 @media(max-width: 480px) {
   body {
     background-size: 272% 930px;
   }
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+  .navbar-default .navbar-nav > li > a {
+    font-size: 0.9em;
+    padding: 8px 0;
+    margin-right: 4px;
+  }
   .navbar-header .navbar-brand {
     font-size: 1em;
   }
-
+  .main-text-wrap p {
+    font-size: 0.8em;
+  }
+  .nav-tabs > li > a {
+    font-size: 0.9em;
+  }
+  .about-main-list {
+    li{
+      margin-bottom: 1%;
+    }
+    .img-wrap {
+      margin-right: 8px;
+    }
+    p {
+      font-size: 0.8em;
+    }
+    h2{
+      font-size: 0.9em;
+    }
+  }
+  .about-me {
+    .tab-content .tab-list {
+      font-size: 0.9em;
+    }
+    .table-responsive .table-responsive > .table > thead > tr > th,
+    .table-responsive > .table > thead > tr > td, .table-responsive >
+    .table > tbody > tr > th, .table-responsive >
+    .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > th,
+    .table-responsive > .table > tfoot > tr > td{
+      font-size: 0.9em;
+      white-space: inherit;
+    }
+    .sales li{
+      font-size: 0.9em;
+    }
+  }
+  .about-my-work{
+    p,li{
+      font-size: 0.9em;
+    }
+    h3{
+      background-color: rgb(247, 246, 251);
+    }
+  }
   .courel-wrap img {
     margin: 0 auto !important;
   }
-  input[type="text"] {
-    width: 100%;
+  .comments-about-me{
+    p{
+      font-size: 0.9em;
+
+    }
+
   }
-  //textarea{
-  //  margin-bottom: 16px;
-  //}
-  .about-my-work{
-    h3{
-      background-color: rgb(247, 246, 251);
+  .feed-back-form {
+    .submit-btn {
+      width: 100% !important;
+      padding: 8px 0;
+      margin-bottom: 20px;
+
+
+    }
+    input[type="text"] {
+      width: 100% !important;
+      float: none;
     }
   }
 
 }
 
 @media (max-width: 767px) {
+  .navbar-collapse li.active {
+    display: none;
+  }
+  .navbar-header,
+  .navbar-brand{
+    width: 100%;
+    float: none !important;
+    text-align: center;
+  }
+  .navbar-nav {
+    width: 100%;
+  }
+  .about-main-list {
+    li{
+      margin-bottom: 1%;
+    }
+    .img-wrap {
+      margin-right: 6px;
+    }
+    p {
+      font-size: 0.8em;
+    }
+    h2{
+      font-size: 0.9em;
+    }
+  }
   .courel-wrap img {
     margin: 0 auto !important;
     float: none;
-  }
-  .navbar-header {
-    width: 100%;
   }
   .feed-back-form {
     input[type="text"]:first-child {
@@ -624,16 +766,45 @@ h2 {
       margin-bottom: 16px;
     }
   }
+  .feed-back-form {
+
+    .submit-btn {
+      width: 38%;
+      padding: 8px 0;
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      width: 48%;
+      float: left;
+    }
+  }
 
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+  body {
+    background-size: 240% 890px;
+  }
+  .navbar-header,
+  .navbar-brand{
+    width: 100%;
+    float: none !important;
+    text-align: center;
+  }
+  .navbar-nav {
+    width: 100%;
+  }
+
+
 
 }
 
 @media (min-width: 979px) {
   .courel-wrap img {
     float: right;
+  }
+  .navbar-header .navbar-brand {
+  margin-bottom: 1%;
   }
 
 }
@@ -649,25 +820,4 @@ h2 {
   }
 }
 
-///* Responsive: Portrait tablets and up */
-//@media screen and (min-width: 768px) {
-//  .container {
-//    max-width: 730px;
-//  }
-//
-//  /* Remove the padding we set earlier */
-//  .header,
-//  .marketing,
-//  .footer {
-//    padding-left: 0;
-//    padding-right: 0;
-//  }
-//  /* Space out the masthead */
-//  .header {
-//    margin-bottom: 30px;
-//  }
-//  /* Remove the bottom border on the jumbotron for visual effect */
-//  .jumbotron {
-//    border-bottom: 0;
-//  }
-//}
+

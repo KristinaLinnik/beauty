@@ -224,7 +224,7 @@ module.exports = function (grunt) {
         src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
         ignorePath: /(\.\.\/){1,2}bower_components\//
       }
-    }, 
+    },
 
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
@@ -420,6 +420,42 @@ module.exports = function (grunt) {
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
+        }, {
+          expand: true,
+          flatten: true,
+          // cwd: '<%= yeoman.app %>',
+          dest: '<%= yeoman.dist %>/styles',
+          src: ['.tmp/styles/*.css']
+        },{
+          expand: true,
+          flatten: true,
+          // cwd: '',
+          dest: '<%= yeoman.dist %>/scripts/directives',
+          src: ['<%= yeoman.app %>/scripts/directives/*.html']
+        }, {
+          expand: true,
+          flatten: true,
+          // cwd: '',
+          dest: '<%= yeoman.dist %>/bxslider',
+          src: ['<%= yeoman.app %>/bxslider/*.js']
+        }, {
+          expand: true,
+          flatten: true,
+          // cwd: '',
+          dest: '<%= yeoman.dist %>/bxslider',
+          src: ['<%= yeoman.app %>/bxslider/*.css']
+        }, {
+          expand: true,
+          flatten: true,
+          // cwd: '',
+          dest: '<%= yeoman.dist %>/styles',
+          src: ['<%= yeoman.app %>/styles/jquery.scrollbar.css']
+        }, {
+          expand: true,
+          flatten: true,
+          // cwd: '',
+          dest: '<%= yeoman.dist %>/data',
+          src: ['<%= yeoman.app %>/data/*.json']
         }, {
           expand: true,
           cwd: '.',
